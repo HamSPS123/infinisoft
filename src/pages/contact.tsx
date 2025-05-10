@@ -18,16 +18,18 @@ const Contact = () => {
 
           <div className="space-y-4 text-gray-700">
             <div>
-              <strong>Phone:</strong> <span className="block">+66 123 456 789</span>
+              <strong>Phone:</strong> <span className="block">(+856)20 58289955</span>
             </div>
             <div>
-              <strong>Email:</strong> <span className="block">info@verisette.com</span>
+              <strong>Email:</strong> <span className="block">souksawat@infinisoft.info</span>
+            </div>
+            <div>
+              <strong>Whatsapp:</strong> <span className="block">(+856)20 77898984</span>
             </div>
             <div>
               <strong>Address:</strong>
               <p className="mt-1">
-                123 Business Rd, 12th Floor<br />
-                Bangkok, Thailand 10110
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum fuga, nemo tempore, maiores quas libero ab provident vitae soluta velit, ducimus architecto. Debitis autem sapiente aspernatur veritatis sint quo cupiditate!
               </p>
             </div>
           </div>
@@ -72,7 +74,7 @@ const Contact = () => {
       <div className="mt-20">
         <iframe
           className="w-full h-72 rounded-xl shadow"
-          title="Verisette Office Location"
+          title="Infinisoft Office Location"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.822661493869!2d100.5018144153469!3d13.756330090352883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29ecaa512e127%3A0x43b4979c9c574761!2sBangkok!5e0!3m2!1sen!2sth!4v1617288464536!5m2!1sen!2sth"
           allowFullScreen
           loading="lazy"
