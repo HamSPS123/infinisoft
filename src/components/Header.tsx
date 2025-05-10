@@ -3,6 +3,7 @@ import { NavLink } from "react-router";
 import { FaPhone } from "react-icons/fa6";
 import { MdOutlineAlternateEmail } from "react-icons/md";
 import { FaWhatsapp } from "react-icons/fa6";
+import images from "../constants/images";
 
 // import { Menu, X } from "lucide-react";
 
@@ -32,7 +33,7 @@ const Header: React.FC = () => {
         <div className="container mx-auto flex justify-between items-center">
           {/* Logo */}
           <div>
-            <img src="/images/logo.png" alt="logo" className="w-20 h-auto" />
+            <img src={images.logo} alt="logo" className="w-20 h-auto" />
           </div>
 
           {/* Desktop Menu */}

@@ -1,3 +1,5 @@
+import images from "../constants/images";
+
 const Carousal = () => {
   return (
     <section className="bg-gray-900 text-white py-20 px-6 md:px-12">
@@ -23,7 +25,7 @@ const Carousal = () => {
         {/* Right Image */}
         <div className="w-full md:w-1/2 mb-12 md:mb-0">
           <img
-            src="/images/hero.png"
+            src={images.hero}
             alt="Tech Illustration"
             className="w-full max-w-md mx-auto md:mx-0"
           />
