@@ -9,8 +9,8 @@ import images from "../constants/images";
 
 const navItems = [
   { label: "Home", path: "/" },
-  { label: "About", path: "/about" },
-  { label: "Service", path: "/service" },
+  { label: "About Us", path: "/about" },
+  { label: "Services", path: "/service" },
   { label: "Contact Us", path: "/contact" },
 ];
 

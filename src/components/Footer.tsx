@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className=" text-white">
       <div className="container mx-auto min-h-[150px] bg-sky-600 p-4 gap-2">
-        <div className="flex justify-between">
+        <div className="flex justify-between flex-col md:flex-row">
           <div className="flex-1">
             <h2 className="text-2xl font-bold">
               Infinisoft Solutions Sole Co., Ltd.
@@ -13,7 +13,7 @@ const Footer = () => {
           </div>
           <div className="flex-1">
             <h2 className="text-lg font-semibold">Address</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque minima vero repudiandae iure reprehenderit maxime earum officiis similique harum culpa deserunt voluptates nam, dignissimos explicabo? Mollitia suscipit quod autem commodi?</p>
+            <p>Thongkhankham building , 1-4th floors , thongkhankham road , thongkhankham village chanthabuly District, Vientiane Capital, Lao P.D.R</p>
           </div>
           <div className="flex-1">
             <h2 className="text-lg font-semibold">Contact</h2>
