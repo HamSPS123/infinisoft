@@ -1,6 +1,7 @@
 import { Link } from "react-router";
 import Carousal from "../components/Carousal";
 import images from "../constants/images";
+import SEO from "../components/SEO";
 
 const Home = () => {
   const partners = [
@@ -31,6 +32,12 @@ const Home = () => {
   ]
   return (
     <div>
+      <SEO 
+        title="InfiniSoft - Enterprise IT Equipment Solutions"
+        description="InfiniSoft is a distribution company of leading computer hardware and equipment. We create IT solutions by integrating the best products in the market."
+        keywords="IT equipment, enterprise solutions, computer hardware, network solutions, switches, routers, structured cabling, wireless solutions"
+        ogImage="/images/logo.png"
+      />
       <Carousal />
       <div className="container mx-auto p-4">
         <section className="py-16 px-6">

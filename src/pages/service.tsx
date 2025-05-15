@@ -1,3 +1,5 @@
+import SEO from "../components/SEO";
+
 const Service = () => {
   const services = [
     {
@@ -24,6 +26,12 @@ const Service = () => {
 
   return (
     <div className="bg-white">
+      <SEO 
+        title="Services - InfiniSoft IT Solutions & System Integration"  
+        description="Discover our comprehensive IT services including IT Solutions, System Integrations, Project Management, and Maintenance Services for your business needs."
+        keywords="IT solutions, system integration, project management, IT maintenance, business technology, network infrastructure"
+        ogImage="/images/logo.png"
+      />
       {/* Hero Section */}
       <section className="py-20 bg-sky-50">
         <div className="container mx-auto px-4 text-center">

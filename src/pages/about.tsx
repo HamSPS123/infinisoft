@@ -1,5 +1,6 @@
 import { Link } from "react-router";
 import images from "../constants/images";
+import SEO from "../components/SEO";
 
 const About = () => {
   const customers = [
@@ -22,6 +23,12 @@ const About = () => {
     ]
   return (
     <div className="container mx-auto px-4 py-16 space-y-20">
+      <SEO 
+        title="About InfiniSoft - IT Equipment & Network Solutions Provider"
+        description="Learn about InfiniSoft, a leading provider of premium IT equipment and reliable network accessories designed to enhance connectivity, performance, and scalability."
+        keywords="IT equipment provider, network accessories, business IT solutions, network infrastructure, IT consulting"
+        ogImage="/images/logo.png"
+      />
       {/* Hero Section */}
       <section className="bg-white shadow-md py-16 px-6 sm:px-12 md:px-20">
         <div className="max-w-5xl mx-auto text-center">

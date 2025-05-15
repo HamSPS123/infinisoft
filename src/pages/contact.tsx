@@ -1,6 +1,14 @@
+import SEO from "../components/SEO";
+
 const Contact = () => {
   return (
     <div className="container mx-auto px-4 py-20">
+      <SEO 
+        title="Contact InfiniSoft - Get in Touch With Our IT Solutions Team"
+        description="Contact InfiniSoft for all your IT equipment and network solution needs. Our team is ready to assist with your business technology requirements."
+        keywords="contact InfiniSoft, IT solutions contact, technology support, business IT help, network solutions contact"
+        ogImage="/images/logo.png"
+      />
       <h1 className="text-4xl font-bold text-center mb-10 text-sky-600">
         Contact Us
       </h1>
