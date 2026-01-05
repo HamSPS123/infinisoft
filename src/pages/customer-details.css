@@ -1,0 +1,133 @@
+/* Customer Details Content Styles */
+.customer-content {
+  color: #374151;
+  line-height: 1.75;
+}
+
+.customer-content h1,
+.customer-content h2,
+.customer-content h3,
+.customer-content h4,
+.customer-content h5,
+.customer-content h6 {
+  color: #111827;
+  font-weight: 700;
+  margin-top: 1.5em;
+  margin-bottom: 0.75em;
+  line-height: 1.25;
+}
+
+.customer-content h1 {
+  font-size: 2em;
+}
+
+.customer-content h2 {
+  font-size: 1.5em;
+}
+
+.customer-content h3 {
+  font-size: 1.25em;
+}
+
+.customer-content p {
+  margin-bottom: 1.25em;
+  color: #374151;
+}
+
+.customer-content a {
+  color: #0284c7;
+  text-decoration: none;
+}
+
+.customer-content a:hover {
+  text-decoration: underline;
+}
+
+.customer-content strong,
+.customer-content b {
+  color: #111827;
+  font-weight: 600;
+}
+
+.customer-content ul,
+.customer-content ol {
+  margin-bottom: 1.25em;
+  padding-left: 1.5em;
+}
+
+.customer-content ul {
+  list-style-type: disc;
+}
+
+.customer-content ol {
+  list-style-type: decimal;
+}
+
+.customer-content li {
+  margin-bottom: 0.5em;
+  color: #374151;
+}
+
+.customer-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  margin: 1.5em 0;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.customer-content blockquote {
+  border-left: 4px solid #0284c7;
+  padding-left: 1em;
+  margin: 1.5em 0;
+  font-style: italic;
+  color: #4b5563;
+}
+
+.customer-content code {
+  background-color: #f3f4f6;
+  padding: 0.2em 0.4em;
+  border-radius: 0.25rem;
+  font-size: 0.875em;
+  font-family: monospace;
+}
+
+.customer-content pre {
+  background-color: #1f2937;
+  color: #f9fafb;
+  padding: 1em;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  margin: 1.5em 0;
+}
+
+.customer-content pre code {
+  background-color: transparent;
+  padding: 0;
+  color: inherit;
+}
+
+.customer-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5em 0;
+}
+
+.customer-content th,
+.customer-content td {
+  border: 1px solid #e5e7eb;
+  padding: 0.75em;
+  text-align: left;
+}
+
+.customer-content th {
+  background-color: #f9fafb;
+  font-weight: 600;
+  color: #111827;
+}
+
+.customer-content hr {
+  border: 0;
+  border-top: 1px solid #e5e7eb;
+  margin: 2em 0;
+}

@@ -1,126 +1,149 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router";
+import { motion, AnimatePresence } from "framer-motion";
 import { FaPhone } from "react-icons/fa6";
 import { MdOutlineAlternateEmail } from "react-icons/md";
 import { FaWhatsapp } from "react-icons/fa6";
+import { FiMenu, FiX } from "react-icons/fi";
 import images from "../constants/images";
 
-// import { Menu, X } from "lucide-react";
+import "./header.css";
 
 const navItems = [
   { label: "Home", path: "/" },
   { label: "About Us", path: "/about" },
   { label: "Services", path: "/service" },
+  { label: "Partners & Products", path: "/partners" },
+  { label: "Our Projects", path: "/projects" },
   { label: "Contact Us", path: "/contact" },
 ];
 
 const Header: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  // Handle scroll effect for header
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
     <>
       {/* Top Bar */}
-      <div className="bg-sky-500 text-white p-2 text-sm hidden md:block">
-        <div className="container mx-auto flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 text-center sm:text-left">
-          <span><FaPhone className="inline" /> (+856)20 58289955</span>
-          <span><MdOutlineAlternateEmail className="inline" /> souksawat@infinisoft.info</span>
-          <span><FaWhatsapp className="inline" /> (+856)20 77898984</span>
+      <div className="top-bar hidden md:block">
+        <div className="container max-w-[1400px] mx-auto px-4 flex justify-between items-center">
+          <div className="flex items-center gap-6">
+            <span className="flex items-center gap-2"><FaPhone className="text-xs" /> (+856)20 58289955</span>
+            <span className="flex items-center gap-2"><MdOutlineAlternateEmail className="text-sm" /> souksawat@infinisoft.info</span>
+            <span className="flex items-center gap-2"><FaWhatsapp className="text-xs" /> (+856)20 77898984</span>
+          </div>
+          <div className="flex items-center gap-4">
+            <NavLink to="/contact" className="hover:text-white/80 transition-colors">Support</NavLink>
+            <NavLink to="/login" className="hover:text-white/80 transition-colors">Login</NavLink>
+          </div>
         </div>
       </div>
 
       {/* Main Nav */}
-      <header className="border-b border-gray-200 p-4 sticky top-0 z-50 bg-white">
-        <div className="container mx-auto flex justify-between items-center">
+      <header className={`header py-4 ${scrolled ? 'header-scrolled' : ''}`}>
+        <div className="container max-w-[1400px] mx-auto px-4 flex justify-between items-center">
           {/* Logo */}
-          <div>
-            <img src={images.logo} alt="logo" className="w-20 h-auto" />
-          </div>
+          <motion.div 
+            className="logo-container"
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+          >
+            <NavLink to="/">
+              <img src={images.logo} alt="InfiniSoft" />
+            </NavLink>
+          </motion.div>
 
           {/* Desktop Menu */}
-          <ul className="hidden md:flex space-x-4 items-center">
-            {navItems.map((item) => (
-              <li key={item.path}>
+          <nav className="hidden md:flex items-center gap-8">
+            {navItems.map((item, index) => (
+              <motion.div
+                key={item.path}
+                initial={{ opacity: 0, y: -10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.1 * index }}
+              >
                 <NavLink
                   to={item.path}
                   end
                   className={({ isActive }) =>
-                    isActive
-                      ? "relative text-sky-500 font-semibold py-2 px-2"
-                      : "relative text-gray-800 font-semibold py-2 px-2 hover:text-sky-500 group-hover:text-sky-500"
+                    `nav-link text-gray-700 font-medium ${isActive ? 'active' : ''}`
                   }
                 >
                   {item.label}
-                  <span className="absolute bottom-0 left-0 w-full h-[2px] bg-sky-500 transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
                 </NavLink>
-              </li>
+              </motion.div>
             ))}
-          </ul>
+          </nav>
 
-          {/* Mobile Hamburger Button */}
+          {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-gray-800"
+            className="md:hidden"
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label="Toggle menu"
           >
-            {menuOpen ? (
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                className="w-6 h-6"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              </svg>
-            ) : (
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                className="w-6 h-6"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-                />
-              </svg>
-            )}
+            {menuOpen ? <FiX size={24} /> : <FiMenu size={24} />}
           </button>
         </div>
+      </header>
 
-        {/* Mobile Menu */}
+      {/* Mobile Menu */}
+      <AnimatePresence>
         {menuOpen && (
-          <div className="md:hidden mt-4">
-            <ul className="flex flex-col gap-2">
-              {navItems.map((item) => (
-                <li key={item.path}>
+          <motion.div 
+            className="mobile-menu"
+            initial={{ x: '100%', opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            exit={{ x: '100%', opacity: 0 }}
+            transition={{ type: 'tween', duration: 0.3 }}
+          >
+            <div className="mobile-menu-header">
+              <img src={images.logo} alt="InfiniSoft" className="h-8" />
+              <button onClick={() => setMenuOpen(false)} className="menu-button">
+                <FiX size={24} />
+              </button>
+            </div>
+            <nav className="flex flex-col">
+              {navItems.map((item, index) => (
+                <motion.div
+                  key={item.path}
+                  initial={{ x: 20, opacity: 0 }}
+                  animate={{ x: 0, opacity: 1 }}
+                  transition={{ delay: 0.1 * index }}
+                  className="mobile-nav-item"
+                >
                   <NavLink
                     to={item.path}
                     end
                     onClick={() => setMenuOpen(false)}
                     className={({ isActive }) =>
-                      isActive
-                        ? "relative text-sky-500 font-semibold py-2 px-2"
-                        : "relative text-gray-800 font-semibold py-2 px-2 hover:text-sky-500"
+                      isActive ? 'text-green-600 font-medium' : 'text-gray-800'
                     }
                   >
                     {item.label}
-                    <span className="absolute bottom-0 left-0 w-full h-[2px] bg-sky-500 transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
                   </NavLink>
-                </li>
+                </motion.div>
               ))}
-            </ul>
-          </div>
+            </nav>
+          </motion.div>
         )}
-      </header>
+      </AnimatePresence>
     </>
   );
 };

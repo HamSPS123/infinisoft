@@ -1,0 +1,315 @@
+.partner-details-page h1, .partner-details-page h2, .partner-details-page h3, .partner-details-page h4, .partner-details-page h5, .partner-details-page h6 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #111827;
+}
+
+.partner-details-page h1 {
+    font-size: 2.25rem;
+}
+
+.partner-details-page h2 {
+    font-size: 1.875rem;
+}
+
+.partner-details-page h3 {
+    font-size: 1.5rem;
+}
+
+.partner-details-page h4 {
+    font-size: 1.25rem;
+}
+
+.partner-details-page h5 {
+    font-size: 1.125rem;
+}
+
+.partner-details-page h6 {
+    font-size: 1rem;
+}
+
+.partner-details-page p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+/* Links */
+.partner-details-page a {
+    color: #2563eb;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+.partner-details-page a:hover {
+    color: #1d4ed8;
+    text-decoration: underline;
+}
+
+/* Lists */
+.partner-details-page ul, .partner-details-page ol {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+}
+
+.partner-details-page li {
+    margin-bottom: 0.25rem;
+}
+
+/* Form elements */
+.partner-details-page input, .partner-details-page select, .partner-details-page textarea, .partner-details-page button {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+
+.partner-details-page button, .partner-details-page input[type="button"], .partner-details-page input[type="reset"], .partner-details-page input[type="submit"] {
+    cursor: pointer;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.partner-details-page button:hover, .partner-details-page input[type="button"]:hover, .partner-details-page input[type="reset"]:hover, .partner-details-page input[type="submit"]:hover {
+    background-color: #1d4ed8;
+}
+
+.partner-details-page input[type="text"], .partner-details-page input[type="email"], .partner-details-page input[type="password"], .partner-details-page input[type="search"],
+.partner-details-page input[type="number"], .partner-details-page input[type="tel"], .partner-details-page input[type="url"], .partner-details-page textarea, .partner-details-page select {
+    padding: 0.5rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.25rem;
+    width: 100%;
+    transition: border-color 0.2s ease-in-out;
+}
+
+.partner-details-page input:focus, .partner-details-page textarea:focus, .partner-details-page select:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+/* Tables */
+.partner-details-page table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+}
+
+.partner-details-page th, .partner-details-page td {
+    padding: 0.75rem;
+    border-bottom: 1px solid #e5e7eb;
+    text-align: left;
+}
+
+.partner-details-page th {
+    font-weight: 600;
+    background-color: #f3f4f6;
+}
+
+/* Images */
+.partner-details-page img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Code */
+.partner-details-page code, .partner-details-page pre {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-size: 0.875em;
+}
+
+.partner-details-page code {
+    color: #db2777;
+    background-color: #f3f4f6;
+    padding: 0.2em 0.4em;
+    border-radius: 0.25rem;
+}
+
+.partner-details-page pre {
+    background-color: #f3f4f6;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    overflow-x: auto;
+    margin-bottom: 1rem;
+}
+
+/* Blockquote */
+.partner-details-page blockquote {
+    border-left: 4px solid #e5e7eb;
+    padding-left: 1rem;
+    margin-left: 0;
+    margin-right: 0;
+    font-style: italic;
+    color: #6b7280;
+}
+
+/* Horizontal rule */
+.partner-details-page hr {
+    border: 0;
+    border-top: 1px solid #e5e7eb;
+    margin: 1.5rem 0;
+}
+
+/* Custom variables */
+.partner-details-page :root {
+    --container-width: 1200px;
+    --container-max-width: 1200px;
+    --container-padding: 1rem;
+}
+
+/* Container query styles */
+/* .partner-details-page @layer utilities {
+    .\@container {
+        container-type: inline-size;
+    }
+} */
+
+/* Partner Details Page Specific Styles */
+/* .partner-details-page {
+    background-color: #f9fafb;
+} */
+
+/* Hero Section Styles */
+.partner-details-page .hero-section {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+    color: white;
+}
+
+.partner-details-page .hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.7));
+}
+
+.partner-details-page .hero-content {
+    position: relative;
+    z-index: 10;
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: flex-end;
+}
+
+.partner-details-page .hero-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.partner-details-page .hero-description {
+    font-size: 1.125rem;
+    max-width: 36rem;
+    margin-bottom: 1.5rem;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.partner-details-page .badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    margin-right: 0.5rem;
+}
+
+.partner-details-page .badge-active {
+    background-color: #10b981;
+    color: white;
+}
+
+.partner-details-page .badge-website {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    transition: background-color 0.2s;
+}
+
+.partner-details-page .badge-website:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    text-decoration: none;
+}
+
+/* Content Section Styles */
+.partner-details-page .content-section {
+    padding: 2rem;
+}
+
+.partner-details-page .content-card {
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Product Card Styles */
+.partner-details-page .product-card {
+    display: flex;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.partner-details-page .product-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.partner-details-page .product-image {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.partner-details-page .product-info {
+    padding: 1rem;
+    flex: 1;
+}
+
+.partner-details-page .product-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #111827;
+}
+
+.partner-details-page .product-description {
+    color: #6b7280;
+    font-size: 0.875rem;
+    margin-bottom: 0.75rem;
+}
+
+.partner-details-page .product-link {
+    display: inline-flex;
+    align-items: center;
+    color: #2563eb;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.partner-details-page .product-link:hover {
+    text-decoration: underline;
+}
+
+/* Category Styles */
+.partner-details-page .category-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    color: #111827;
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 0.5rem;
+}

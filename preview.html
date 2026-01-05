@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ContentEditor Preview</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f5f5f5;
+    }
+    .preview-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+    }
+    h1 {
+      color: #333;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 10px;
+    }
+    .description {
+      color: #666;
+      margin-bottom: 20px;
+    }
+    .mockup {
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+    .mockup img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+    .features {
+      background-color: #f9f9f9;
+      padding: 15px;
+      border-radius: 4px;
+    }
+    .features h2 {
+      margin-top: 0;
+      font-size: 18px;
+    }
+    .features ul {
+      padding-left: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="preview-container">
+    <h1>ContentEditor Component Preview</h1>
+    
+    <div class="description">
+      <p>This is a preview of the ContentEditor component with its modern design. The actual interactive component will be available when you run the development server.</p>
+    </div>
+    
+    <div class="mockup">
+      <h3>Component Layout</h3>
+      <div style="display: flex; height: 400px; border: 1px solid #ddd; border-radius: 4px; overflow: hidden;">
+        <!-- Left Sidebar -->
+        <div style="width: 250px; background-color: white; border-right: 1px solid #eee; padding: 15px;">
+          <h4 style="margin-top: 0;">Add Blocks</h4>
+          <div style="margin-bottom: 10px; padding: 10px; border: 1px solid #e0e0e0; border-radius: 4px;">
+            <div style="font-weight: bold;">Heading</div>
+            <div style="font-size: 12px; color: #666;">Add a title or subtitle</div>
+          </div>
+          <div style="margin-bottom: 10px; padding: 10px; border: 1px solid #e0e0e0; border-radius: 4px;">
+            <div style="font-weight: bold;">Paragraph</div>
+            <div style="font-size: 12px; color: #666;">Add text content</div>
+          </div>
+          <div style="margin-bottom: 10px; padding: 10px; border: 1px solid #e0e0e0; border-radius: 4px;">
+            <div style="font-weight: bold;">Image</div>
+            <div style="font-size: 12px; color: #666;">Add an image</div>
+          </div>
+        </div>
+        
+        <!-- Main Content -->
+        <div style="flex-grow: 1; background-color: #f9f9f9; padding: 20px; overflow-y: auto;">
+          <div style="background-color: white; border-radius: 4px; border: 1px solid #eee; padding: 15px; margin-bottom: 15px;">
+            <div style="background-color: #f5f5f5; padding: 8px; margin-bottom: 10px; font-size: 12px; border-radius: 4px;">Heading</div>
+            <div style="font-size: 24px; font-weight: bold;">Welcome to the Content Editor</div>
+          </div>
+          
+          <div style="background-color: white; border-radius: 4px; border: 1px solid #eee; padding: 15px; margin-bottom: 15px;">
+            <div style="background-color: #f5f5f5; padding: 8px; margin-bottom: 10px; font-size: 12px; border-radius: 4px;">Paragraph</div>
+            <div>This is a paragraph block where you can add rich text content. The editor supports formatting options like bold, italic, and more.</div>
+          </div>
+        </div>
+        
+        <!-- Right Sidebar -->
+        <div style="width: 280px; background-color: white; border-left: 1px solid #eee; padding: 15px;">
+          <h4 style="margin-top: 0;">Properties</h4>
+          <div style="margin-bottom: 15px;">
+            <label style="display: block; margin-bottom: 5px; font-size: 12px; font-weight: bold;">Title</label>
+            <input type="text" style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px;" value="Page Title" />
+          </div>
+          <div style="margin-bottom: 15px;">
+            <label style="display: block; margin-bottom: 5px; font-size: 12px; font-weight: bold;">Slug</label>
+            <input type="text" style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px;" value="page-title" />
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="features">
+      <h2>Component Features</h2>
+      <ul>
+        <li><strong>Modern UI</strong> - Clean, professional interface with smooth animations</li>
+        <li><strong>Block-Based Editing</strong> - Add, edit, and reorder content blocks</li>
+        <li><strong>Drag and Drop</strong> - Easily rearrange blocks with drag and drop</li>
+        <li><strong>Responsive Design</strong> - Works on desktop and mobile devices</li>
+        <li><strong>Rich Text Editing</strong> - Format text with various styling options</li>
+        <li><strong>Block Settings</strong> - Configure each block with custom settings</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

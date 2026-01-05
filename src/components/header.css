@@ -1,0 +1,123 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  transition: all 0.3s ease;
+}
+
+.header-scrolled {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+.nav-link {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, oklch(58.8% 0.158 241.966), oklch(71.5% 0.143 215.221));
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+.nav-link.active {
+  color: oklch(58.8% 0.158 241.966);
+  font-weight: 600;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  background: white;
+  z-index: 100;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.mobile-nav-item {
+  margin: 1rem 0;
+  font-size: 1.25rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.mobile-nav-item:hover {
+  color: oklch(58.8% 0.158 241.966);
+  transform: translateX(8px);
+}
+
+.contact-button {
+  background: linear-gradient(90deg, oklch(58.8% 0.158 241.966), oklch(71.5% 0.143 215.221));
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.contact-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(34, 61, 197, 0.25);
+}
+
+.top-bar {
+  /* background: linear-gradient(90deg, #2258c5, #1653a3); */
+  background: linear-gradient(90deg, oklch(58.8% 0.158 241.966), oklch(71.5% 0.143 215.221));
+  color: white;
+  padding: 0.5rem 0;
+  font-size: 0.875rem;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container img {
+  height: 40px;
+  width: auto;
+  transition: all 0.3s ease;
+}
+
+.menu-button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.menu-button:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}

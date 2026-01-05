@@ -15,9 +15,9 @@ interface SEOProps {
 }
 
 const SEO = ({
-  title = 'InfiniSoft',
-  description = 'InfiniSoft - Innovative Software Solutions',
-  keywords = 'software, technology, innovation, solutions',
+  title = 'InfiniSoft - Infinisoft Solutions Sole Company Limited',
+  description = 'Infinisoft Solutions Sole Company Limited - Innovative IT Equipment and Network Solutions Provider',
+  keywords = 'software, technology, innovation, solutions, IT equipment, network solutions',
   ogTitle = '',
   ogDescription = '',
   ogImage = '/images/logo.png',

@@ -33,10 +33,10 @@ const Service = () => {
         ogImage="/images/logo.png"
       />
       {/* Hero Section */}
-      <section className="py-20 bg-sky-50">
+      <section className="py-20 bg-gradient-to-br from-sky-50 to-cyan-50">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl font-bold text-sky-600 mb-6">Our Services</h1>
-          <p className="text-xl text-gray-700 max-w-3xl mx-auto">
+          <h1 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-sky-600 to-cyan-600 mb-6">Our Services</h1>
+          <p className="text-xl text-transparent bg-clip-text bg-gradient-to-r from-sky-600 to-cyan-600 max-w-3xl mx-auto">
             InfiniSoft delivers professional IT services through our four core offerings: IT Solutions, System Integrations, Project Management, and Maintenance Services. We're your trusted technology partner for complete business success.
           </p>
         </div>
@@ -53,8 +53,8 @@ const Service = () => {
                 className="p-6 bg-gray-50 rounded-2xl shadow-sm hover:shadow-md border border-gray-100 transition-all duration-300 flex flex-col h-full"
               >
                 <div className="text-4xl mb-4">{service.icon}</div>
-                <h3 className="text-xl font-bold text-sky-600 mb-3">{service.title}</h3>
-                <p className="text-gray-700 text-sm flex-grow">{service.description}</p>
+                <h3 className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-sky-600 to-cyan-600 mb-3">{service.title}</h3>
+                <p className="text-transparent bg-clip-text bg-gradient-to-r from-sky-600 to-cyan-600 text-sm flex-grow">{service.description}</p>
               </div>
             ))}
           </div>
@@ -67,31 +67,31 @@ const Service = () => {
           <h2 className="text-3xl font-semibold text-center mb-12">Our Process</h2>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
             <div className="text-center p-6">
-              <div className="w-12 h-12 bg-sky-600 text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">1</div>
-              <h3 className="font-bold mb-2">Consultation</h3>
-              <p className="text-gray-600 text-sm">We assess your business needs and recommend the right equipment solutions.</p>
+              <div className="w-12 h-12 bg-gradient-to-r from-sky-600 to-cyan-600 text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">1</div>
+              <h3 className="text-transparent bg-clip-text bg-gradient-to-r from-sky-600 to-cyan-600 font-bold mb-2">Consultation</h3>
+              <p className="text-transparent bg-clip-text bg-gradient-to-r from-sky-600 to-cyan-600 text-sm">We assess your business needs and recommend the right equipment solutions.</p>
             </div>
             <div className="text-center p-6">
-              <div className="w-12 h-12 bg-sky-600 text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">2</div>
-              <h3 className="font-bold mb-2">Procurement</h3>
-              <p className="text-gray-600 text-sm">We source high-quality equipment at competitive prices from trusted vendors.</p>
+              <div className="w-12 h-12 bg-gradient-to-r from-sky-600 to-cyan-600 text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">2</div>
+              <h3 className="text-transparent bg-clip-text bg-gradient-to-r from-sky-600 to-cyan-600 font-bold mb-2">Procurement</h3>
+              <p className="text-transparent bg-clip-text bg-gradient-to-r from-sky-600 to-cyan-600 text-sm">We source high-quality equipment at competitive prices from trusted vendors.</p>
             </div>
             <div className="text-center p-6">
-              <div className="w-12 h-12 bg-sky-600 text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">3</div>
-              <h3 className="font-bold mb-2">Implementation</h3>
-              <p className="text-gray-600 text-sm">Our technicians handle delivery, installation, and configuration.</p>
+              <div className="w-12 h-12 bg-gradient-to-r from-sky-600 to-cyan-600 text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">3</div>
+              <h3 className="text-transparent bg-clip-text bg-gradient-to-r from-sky-600 to-cyan-600 font-bold mb-2">Implementation</h3>
+              <p className="text-transparent bg-clip-text bg-gradient-to-r from-sky-600 to-cyan-600 text-sm">Our technicians handle delivery, installation, and configuration.</p>
             </div>
             <div className="text-center p-6">
-              <div className="w-12 h-12 bg-sky-600 text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">4</div>
-              <h3 className="font-bold mb-2">Support</h3>
-              <p className="text-gray-600 text-sm">We provide ongoing maintenance and technical support for all equipment.</p>
+              <div className="w-12 h-12 bg-gradient-to-r from-sky-600 to-cyan-600 text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">4</div>
+              <h3 className="text-transparent bg-clip-text bg-gradient-to-r from-sky-600 to-cyan-600 font-bold mb-2">Support</h3>
+              <p className="text-transparent bg-clip-text bg-gradient-to-r from-sky-600 to-cyan-600 text-sm">We provide ongoing maintenance and technical support for all equipment.</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Call to Action */}
-      <section className="py-16 bg-sky-600 text-white text-center">
+      <section className="py-16 bg-gradient-to-r from-sky-600 to-cyan-600 text-white text-center">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-semibold mb-4">Ready to upgrade your IT infrastructure?</h2>
           <p className="mb-8 max-w-2xl mx-auto">Contact us today for a free consultation and discover how InfiniSoft can help your business thrive with the right technology.</p>
